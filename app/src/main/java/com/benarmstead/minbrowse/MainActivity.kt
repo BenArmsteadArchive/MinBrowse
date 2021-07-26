@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,5 +16,9 @@ class MainActivity : AppCompatActivity() {
         view.loadUrl("https://www.duckduckgo.com")
         val settings = view.settings
         settings.javaScriptEnabled = true
+
+        findViewById<Button>(R.id.homeButton).setOnClickListener(){
+            view.loadUrl("https://www.duckduckgo.com")
+        }
     }
 }
