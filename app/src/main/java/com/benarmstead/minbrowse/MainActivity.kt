@@ -18,16 +18,16 @@ class MainActivity : AppCompatActivity() {
         val settings = view.settings
         settings.javaScriptEnabled = true
 
-        findViewById<Button>(R.id.homeButton).setOnClickListener(){
+        findViewById<Button>(R.id.homeButton).setOnClickListener{
             view.loadUrl("https://www.duckduckgo.com")
         }
 
-        findViewById<Button>(R.id.clearIdentity).setOnClickListener(){
-            CookieManager.getInstance().removeAllCookies(null);
-            CookieManager.getInstance().flush();
+        findViewById<Button>(R.id.clearIdentity).setOnClickListener{
+            CookieManager.getInstance().removeAllCookies(null)
+            CookieManager.getInstance().flush()
 
-            view.clearCache(true);
-            view.clearHistory();
+            view.clearCache(true)
+            view.clearHistory()
 
             view.loadUrl("https://www.duckduckgo.com")
         }
