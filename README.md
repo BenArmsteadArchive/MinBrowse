@@ -1,6 +1,8 @@
 # MinBrowse
 
-Minimalist browser for android
+Minimalist browser for android.
+
+![workflow](https://github.com/benarmstead/MinBrowse/actions/workflows/android.yml/badge.svg)
 
 ![ic_launcher_round](https://user-images.githubusercontent.com/70973680/127126363-82f2403b-180b-4223-aefe-dfc8ea9af891.png) 
 
