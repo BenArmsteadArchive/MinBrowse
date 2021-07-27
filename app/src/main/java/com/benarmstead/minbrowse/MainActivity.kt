@@ -12,14 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val homeUrl = "https://www.duckduckgo.com"
+
         val view = findViewById<WebView>(R.id.webView)
         view.webViewClient = WebViewClient()
-        view.loadUrl("https://www.duckduckgo.com")
+        view.loadUrl(homeUrl)
         val settings = view.settings
         settings.javaScriptEnabled = true
 
         findViewById<Button>(R.id.homeButton).setOnClickListener{
-            view.loadUrl("https://www.duckduckgo.com")
+            view.loadUrl(homeUrl)
         }
 
         findViewById<Button>(R.id.clearIdentity).setOnClickListener{
@@ -29,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             view.clearCache(true)
             view.clearHistory()
 
-            view.loadUrl("https://www.duckduckgo.com")
+            view.loadUrl(homeUrl)
         }
     }
 }
