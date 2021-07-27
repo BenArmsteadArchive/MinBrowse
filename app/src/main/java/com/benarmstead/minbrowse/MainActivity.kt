@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        view = findViewById<WebView>(R.id.webView)
+        view = findViewById(R.id.webView)
         view.webViewClient = WebViewClient()
         view.loadUrl(homeUrl)
         settings = view.settings
