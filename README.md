@@ -1,8 +1,8 @@
 # MinBrowse
 
-![ic_launcher_round](https://user-images.githubusercontent.com/70973680/127126363-82f2403b-180b-4223-aefe-dfc8ea9af891.png) 
-
 Minimalist browser for android
+
+![ic_launcher_round](https://user-images.githubusercontent.com/70973680/127126363-82f2403b-180b-4223-aefe-dfc8ea9af891.png) 
 
 Modern day web browsers have far too many settings and features which are simply useless and seek to re-implement things already implemented well elsewhere.
 
