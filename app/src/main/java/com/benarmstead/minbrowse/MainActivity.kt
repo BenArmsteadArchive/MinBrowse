@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.clearIdentity).setOnClickListener{
             cleanIdentity()
+            goHome()
         }
 
         findViewById<Button>(R.id.toggleJS).setOnClickListener{
@@ -47,8 +48,6 @@ class MainActivity : AppCompatActivity() {
 
         view.clearCache(true)
         view.clearHistory()
-
-        view.loadUrl(homeUrl)
     }
 
     private fun toggleJS(){
