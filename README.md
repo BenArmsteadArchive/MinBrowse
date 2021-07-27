@@ -1,6 +1,6 @@
-![ic_launcher_round](https://user-images.githubusercontent.com/70973680/127126363-82f2403b-180b-4223-aefe-dfc8ea9af891.png) 
-
 # MinBrowse
+
+![ic_launcher_round](https://user-images.githubusercontent.com/70973680/127126363-82f2403b-180b-4223-aefe-dfc8ea9af891.png) 
 
 Minimalist browser for android
 
