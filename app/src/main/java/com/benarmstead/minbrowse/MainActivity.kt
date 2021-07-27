@@ -3,40 +3,56 @@ package com.benarmstead.minbrowse
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.CookieManager
+import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var view: WebView
+    private lateinit var settings: WebSettings
+
+    private val homeUrl = "https://www.duckduckgo.com/?&t=ddg_android"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val homeUrl = "https://www.duckduckgo.com/?&t=ddg_android"
-
-        val view = findViewById<WebView>(R.id.webView)
+        view = findViewById<WebView>(R.id.webView)
         view.webViewClient = WebViewClient()
         view.loadUrl(homeUrl)
-        val settings = view.settings
+        settings = view.settings
         settings.javaScriptEnabled = true
 
         findViewById<Button>(R.id.homeButton).setOnClickListener{
-            view.loadUrl(homeUrl)
+            goHome()
         }
 
         findViewById<Button>(R.id.clearIdentity).setOnClickListener{
-            CookieManager.getInstance().removeAllCookies(null)
-            CookieManager.getInstance().flush()
-
-            view.clearCache(true)
-            view.clearHistory()
-
-            view.loadUrl(homeUrl)
+            cleanIdentity()
         }
 
         findViewById<Button>(R.id.toggleJS).setOnClickListener{
-            settings.javaScriptEnabled = false
-            view.reload()
+            toggleJS()
         }
+    }
+
+    private fun goHome(){
+        view.loadUrl(homeUrl)
+    }
+
+    private fun cleanIdentity(){
+        CookieManager.getInstance().removeAllCookies(null)
+        CookieManager.getInstance().flush()
+
+        view.clearCache(true)
+        view.clearHistory()
+
+        view.loadUrl(homeUrl)
+    }
+
+    private fun toggleJS(){
+        settings.javaScriptEnabled = false
+        view.reload()
     }
 }
