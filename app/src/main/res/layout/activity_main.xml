@@ -17,19 +17,19 @@
 
     <Button
         android:id="@+id/homeButton"
-        android:layout_width="0dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="Home"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
         android:textAllCaps="false"
         app:cornerRadius="@android:dimen/app_icon_size"
         app:icon="@drawable/ic_action_home"
+        app:iconPadding="0dp"
         app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintEnd_toStartOf="@+id/clearIdentity"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:iconGravity="textStart"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/clearIdentity"
@@ -39,25 +39,56 @@
         android:textAllCaps="false"
         app:cornerRadius="@android:dimen/app_icon_size"
         app:icon="@drawable/ic_action_fire"
+        app:iconGravity="textStart"
+        app:iconPadding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintEnd_toStartOf="@+id/toggleJS"
         app:layout_constraintStart_toEndOf="@+id/homeButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:iconGravity="textStart"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/toggleJS"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
         android:text="JS"
         android:textAllCaps="false"
         app:cornerRadius="@android:dimen/app_icon_size"
         app:icon="@drawable/ic_action_toggle"
         app:iconGravity="textStart"
+        app:iconPadding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toStartOf="@+id/goBackButton"
+        app:layout_constraintStart_toEndOf="@+id/clearIdentity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:icon="@drawable/ic_action_go_back"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
+        app:layout_constraintEnd_toStartOf="@+id/goForwardButton"
+        app:layout_constraintStart_toEndOf="@+id/toggleJS"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goForwardButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:icon="@drawable/ic_action_go_forward"
+        app:iconPadding="0dp"
         app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/clearIdentity"
+        app:layout_constraintStart_toEndOf="@+id/goBackButton"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

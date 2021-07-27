@@ -36,6 +36,14 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.toggleJS).setOnClickListener{
             toggleJS()
         }
+
+        findViewById<Button>(R.id.goBackButton).setOnClickListener{
+            goBack()
+        }
+
+        findViewById<Button>(R.id.goForwardButton).setOnClickListener{
+            goForward()
+        }
     }
 
     override fun onBackPressed() {
