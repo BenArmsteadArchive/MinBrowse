@@ -33,5 +33,10 @@ class MainActivity : AppCompatActivity() {
 
             view.loadUrl(homeUrl)
         }
+
+        findViewById<Button>(R.id.toggleJS).setOnClickListener{
+            settings.javaScriptEnabled = false
+            view.reload()
+        }
     }
 }
