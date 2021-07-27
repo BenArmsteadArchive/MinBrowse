@@ -22,19 +22,27 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:text="Home"
+        android:textAllCaps="false"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:icon="@drawable/ic_action_home"
         app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintEnd_toStartOf="@+id/clearIdentity"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:iconGravity="textStart"/>
 
     <Button
         android:id="@+id/clearIdentity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Clear Data"
+        android:text="Data"
+        android:textAllCaps="false"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:icon="@drawable/ic_action_fire"
         app:layout_constraintEnd_toStartOf="@+id/toggleJS"
         app:layout_constraintStart_toEndOf="@+id/homeButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:iconGravity="textStart"/>
 
     <Button
         android:id="@+id/toggleJS"
@@ -42,7 +50,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:text="Toggle JS"
+        android:text="JS"
+        android:textAllCaps="false"
+        app:cornerRadius="@android:dimen/app_icon_size"
+        app:icon="@drawable/ic_action_toggle"
+        app:iconGravity="textStart"
         app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/clearIdentity"
