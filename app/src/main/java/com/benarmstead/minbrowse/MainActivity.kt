@@ -39,10 +39,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
+        goBack()
+    }
+
+    private fun goForward(){
+        if (view.canGoForward()){
+            view.goForward()
+        }
+    }
+
+    private fun goBack(){
         if (view.canGoBack()){
             view.goBack()
-        }else{
-            super.onBackPressed()
         }
     }
 
