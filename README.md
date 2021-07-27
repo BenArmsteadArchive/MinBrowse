@@ -1,4 +1,4 @@
-# MinBrowse
+# ![ic_launcher_round](https://user-images.githubusercontent.com/70973680/127126363-82f2403b-180b-4223-aefe-dfc8ea9af891.png) MinBrowse
 
 Minimalist browser for android
 
@@ -17,3 +17,5 @@ Attempts to block all ads.
 ### Identity cleaning
 
 With the push of a button you can delete your cookies, clear your cache, and delete your history.
+
+## Screenshots
