@@ -2,9 +2,7 @@
 
 Minimalist browser for android.
 
-![workflow](https://github.com/benarmstead/MinBrowse/actions/workflows/android.yml/badge.svg)
-
-![ic_launcher_round](https://user-images.githubusercontent.com/70973680/127126363-82f2403b-180b-4223-aefe-dfc8ea9af891.png) 
+![ic_launcher_round](https://user-images.githubusercontent.com/70973680/127126363-82f2403b-180b-4223-aefe-dfc8ea9af891.png)
 
 Modern day web browsers have far too many settings and features which are simply useless and seek to re-implement things already implemented well elsewhere.
 
