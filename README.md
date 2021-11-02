@@ -8,6 +8,8 @@ Modern day web browsers have far too many settings and features which are simply
 
 The goal of MinBrowser is to offer a simple, minimalist, fast, web browser for android.
 
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="100">](https://benarmstead.github.io/fdroid/repo?fingerprint=9CCBC7C297F0B54520834681D1D29C2184B2CD262E80AA9E453215284ED3D684)
+
 ## Features
 
 **The philosophy of MinBrowse is to have only essential features, below are deemed essential.**
